@@ -17,7 +17,7 @@ class Main {
     Return:
       paga
   **/
-  public static void Ejer1_1(){
-
+  public static int Ejer1_1(){
+      return 0;
   }
 }
