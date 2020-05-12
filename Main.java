@@ -26,7 +26,7 @@ class Main {
 
       String sMethodName = new String (Thread.currentThread().getStackTrace()[1].getMethodName());
       String sClassName  = new String (Thread.currentThread().getStackTrace()[1].getClassName());
-      fNombreMetodo(sClassName, sMethodName);
+      fDevuelveNombreMetodoEjecutandose(sClassName, sMethodName);
 
 
       final int tarifaHora = 20;
@@ -47,7 +47,7 @@ class Main {
       return paga;
   }
 
-  public static void fNombreMetodo(final String pClase, final String pMetodo ){
+  public static void fDevuelveNombreMetodoEjecutandose(final String pClase, final String pMetodo ){
       System.out.println("Ejecutando: Clase->"+pClase);
       System.out.println("            Metodo->"+pMetodo);
   }
