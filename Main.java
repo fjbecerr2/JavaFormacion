@@ -20,7 +20,7 @@ class Main {
     Return:
       paga = (horas * tarifa) - impuestos
   **/
-  public static int fEj1_CalcularPaga(
+  public static void fEj1_CalcularPaga(
       final int phorasTrabajadas)
       {
 
@@ -44,7 +44,6 @@ class Main {
       paga = paga - (paga * 20) / 100;
       System.out.println("Paga neta: "+paga);
 
-      return paga;
   }
 
   public static void fDevuelveNombreMetodoEjecutandose(final String pClase, final String pMetodo ){
