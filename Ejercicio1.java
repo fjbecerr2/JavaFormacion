@@ -2,13 +2,17 @@ import java.util.Scanner; //Importación del código de la clase Scanner desde l
 
 class Ejercicio1
 {
+
+  //MENSAJES
+  static final int VERMENSAJES=1;
+  
    public static void fDevuelveNombreMetodoEjecutandose(final String pClase, final String pMetodo )
   {
     System.out.println("\nEjecutando: Clase->"+pClase);
     System.out.println("            Metodo->"+pMetodo);
   }
 
-  public static void fEjercicio1_CalcularPaga(final int phorasTrabajadas)
+  public static int fEjercicio1_CalcularPaga(final int phorasTrabajadas)
   {
 
     String sMethodName = new String (Thread.currentThread().getStackTrace()[1].getMethodName());
@@ -30,6 +34,7 @@ class Ejercicio1
 
     paga = paga - (paga * 20) / 100;
     fMensajePagaNeta(paga);
+    return paga;
 
   }
 
@@ -56,8 +61,7 @@ class Ejercicio1
   }
 
 
-  //MENSAJES
-  static final int VERMENSAJES=0;
+  
 
   public static void fMensajeHorasTrabajadas(final int phorasTrabajadas){
   if (VERMENSAJES==0){
