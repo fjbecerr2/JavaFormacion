@@ -1,3 +1,5 @@
+import java.util.Scanner; //Importación del código de la clase Scanner desde la biblioteca Java
+
 class Ejercicio1
 {
    public static void fDevuelveNombreMetodoEjecutandose(final String pClase, final String pMetodo )
@@ -18,16 +20,16 @@ class Ejercicio1
     final int impuestosPorcentaje = 20;
     int paga = 0;
 
-    System.out.println("Horas trabajadas: "+phorasTrabajadas);
-    System.out.println("Tarifa Hora: "+tarifaHora);
-    System.out.println("Impuestos %: "+impuestosPorcentaje);
+    fMensajeHorasTrabajadas(phorasTrabajadas);
+    fMensajeTarifaHoras(tarifaHora);
+    fMensajeImpuestos(impuestosPorcentaje);
     
 
     paga = (phorasTrabajadas * tarifaHora);
-    System.out.println("Paga antes impuestos: "+paga);
+    fMensajePaga(paga);
 
     paga = paga - (paga * 20) / 100;
-    System.out.println("Paga neta: "+paga);
+    fMensajePagaNeta(paga);
 
   }
 
@@ -40,21 +42,76 @@ class Ejercicio1
 
     int paga = 0;
 
-    System.out.println("Horas trabajadas: "+phorasTrabajadas);
-    System.out.println("Tarifa Hora: "+ptarifaHora);
-    System.out.println("Impuestos %: "+pporcentajeImpuestos);
+    fMensajeHorasTrabajadas(phorasTrabajadas);
+    fMensajeTarifaHoras(ptarifaHora);
+    fMensajeImpuestos(pporcentajeImpuestos);
     
 
     paga = (phorasTrabajadas * ptarifaHora);
-    System.out.println("Paga antes impuestos: "+paga);
+    fMensajePaga(paga);
 
     paga = paga - (paga * 20) / 100;
-    System.out.println("Paga neta: "+paga);
+    fMensajePagaNeta(paga);
+
+  }
+
+
+  //MENSAJES
+  static final int VERMENSAJES=0;
+
+  public static void fMensajeHorasTrabajadas(final int phorasTrabajadas){
+  if (VERMENSAJES==0){
+    System.out.println("Horas trabajadas: " + phorasTrabajadas);
+  }
+}
+
+public static void fMensajeTarifaHoras(final int ptarifaHoras){
+  if (VERMENSAJES==0){
+    System.out.println("Tarifa Hora "+ ptarifaHoras);
+  }
+}
+
+public static void fMensajeImpuestos(final int pporcentajeImpuestos){
+  if (VERMENSAJES==0){
+   System.out.println("Impuestos %: "+ pporcentajeImpuestos);
+  }
+}
+
+public static void fMensajePaga(final int pPaga){
+  if (VERMENSAJES==0){
+     System.out.println("Paga antes impuestos: "+ pPaga);
+  }
+}
+
+public static void fMensajePagaNeta(final int pPagaNeta){
+  if (VERMENSAJES==0){
+     System.out.println("Paga neta: "+ pPagaNeta);
+  }
+}
+
+public static int fIntroducirHorasTrabajadas(){
+     String sMethodName = new String (Thread.currentThread().getStackTrace()[1].getMethodName());
+    String sClassName  = new String (Thread.currentThread().getStackTrace()[1].getClassName());
+    fDevuelveNombreMetodoEjecutandose(sClassName, sMethodName);
+
+
+    System.out.println("Introduzca horas trabajadas: ");
+    Scanner dato = new Scanner(System.in);
+    int iHorasTrabajadas = 0;
+    iHorasTrabajadas = dato.nextInt();
+
+    return iHorasTrabajadas;
 
   }
 
 }
 
   
+/*
 
+
+
+
+
+*/
 
