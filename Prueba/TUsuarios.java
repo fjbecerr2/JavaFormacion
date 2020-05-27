@@ -1,4 +1,6 @@
-class TipoUsuarios
+package Prueba;
+
+class TUsuarios
 {
   final int NUSUARIOS = 4;
 
