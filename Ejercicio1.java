@@ -4,7 +4,7 @@ class Ejercicio1
 {
 
   //MENSAJES
-  static final int VERMENSAJES=1;
+  static final int VERMENSAJES=0;
   
    public static void fDevuelveNombreMetodoEjecutandose(final String pClase, final String pMetodo )
   {
