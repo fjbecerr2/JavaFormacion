@@ -1,4 +1,3 @@
-package Prueba;
 
 class TUsuarios
 {

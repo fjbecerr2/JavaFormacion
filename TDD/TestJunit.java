@@ -2,19 +2,21 @@
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
+//import configJunit.*;
 
 public class TestJunit
 {
-  static public int contador = 0;
 
-  public static final String ANSI_RED = "\u001B[31m";
-  public static final String ANSI_RESET = "\u001B[0m";
+  configJunit cfg = new configJunit();
+
+  static public int contador = 0;
 
   @Test
   public void testCalcularPaga1() 
   {
     contador++;
-    assertEquals(ANSI_RED+"\nTEST [ERROR]"+ANSI_RESET, 160, Ejercicio1.fEjercicio1_CalcularPaga(100));
+   // assertEquals(ANSI_RED+"\nTEST [ERROR]"+ANSI_RESET, 160, CalcularPaga.getCalcularPaga(100));
+   assertEquals(cfg.getTestError(), 160, CalcularPaga.getCalcularPaga(100));
     
   }
 
@@ -22,8 +24,9 @@ public class TestJunit
   public void testCalcularPaga2() 
   {
     contador++;
-    assertEquals(ANSI_RED+"\nTEST [ERROR]"+ANSI_RESET, 160, Ejercicio1.fEjercicio1_CalcularPaga(100));
+    //assertEquals(ANSI_RED+"\nTEST [ERROR]"+ANSI_RESET, 160, CalcularPaga.getCalcularPaga(100));
     //assertNotEquals("\nTEST [OK]", 160, Ejercicio1.fEjercicio1_CalcularPaga(100));
+    assertEquals(cfg.getTestError(), 160, CalcularPaga.getCalcularPaga(100));
   }
 
   @Test

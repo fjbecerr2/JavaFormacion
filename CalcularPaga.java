@@ -1,6 +1,6 @@
 import java.util.Scanner; //Importación del código de la clase Scanner desde la biblioteca Java
 
-class Ejercicio1
+class CalcularPaga
 {
 
   //MENSAJES
@@ -12,7 +12,7 @@ class Ejercicio1
     System.out.println("            Metodo->"+pMetodo);
   }
 
-  public static int fEjercicio1_CalcularPaga(final int phorasTrabajadas)
+  public static int getCalcularPaga(final int phorasTrabajadas)
   {
 
     String sMethodName = new String (Thread.currentThread().getStackTrace()[1].getMethodName());
@@ -38,7 +38,7 @@ class Ejercicio1
 
   }
 
-  public static void fEjercicio1_CalcularPaga2(final int phorasTrabajadas, final int ptarifaHora, final int pporcentajeImpuestos )
+  public static void getCalcularPaga2(final int phorasTrabajadas, final int ptarifaHora, final int pporcentajeImpuestos )
   {
 
     String sMethodName = new String (Thread.currentThread().getStackTrace()[1].getMethodName());

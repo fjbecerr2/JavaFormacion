@@ -1,9 +1,9 @@
-package Prueba;
+// package Util;
 
 class GeneradorCodigosUsuario{
 
   
-  public int setGenerarCodigo(){
+  public int getGenerarCodigo(){
     return (int)(Math.random()*100+1);
   }
    
