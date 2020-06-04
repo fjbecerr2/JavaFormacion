@@ -1,5 +1,6 @@
 import Util.*;
 import TDD.*;
+import Operaciones.*;
 
 public class Main {
   public static void main(String[] args) 
@@ -7,9 +8,16 @@ public class Main {
     //TUsuarios TU = new TUsuarios();
     GeneradorCodigosUsuario gu = new GeneradorCodigosUsuario ();
 
+    CalcularPaga cp = new CalcularPaga();
+
     System.out.println("EJERCICIOS DE JAVA");
     System.out.println("------------------");
-    CalcularPaga.getCalcularPaga(100);
+    cp.getCalcularPaga(100);
+
+    Usuarios us = new Usuarios();
+    us.setUsuario();
+    us.getVerUsuario();
+    //.CalcularPaga.getCalcularPaga(100);
     /*Ejercicio1.fEjercicio1_CalcularPaga2(100,20,20);
     Ejercicio1.fEjercicio1_CalcularPaga(Ejercicio1.fIntroducirHorasTrabajadas());*/
     

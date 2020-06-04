@@ -1,23 +1,21 @@
 import java.util.Scanner; //Importación del código de la clase Scanner desde la biblioteca Java
+import Util.*;
 
 class CalcularPaga
 {
+ 
+   static Mensajes ut = new Mensajes();
+  
 
   //MENSAJES
   static final int VERMENSAJES=0;
-  
-   public static void fDevuelveNombreMetodoEjecutandose(final String pClase, final String pMetodo )
-  {
-    System.out.println("\nEjecutando: Clase->"+pClase);
-    System.out.println("            Metodo->"+pMetodo);
-  }
 
   public static int getCalcularPaga(final int phorasTrabajadas)
   {
-
-    String sMethodName = new String (Thread.currentThread().getStackTrace()[1].getMethodName());
+    
     String sClassName  = new String (Thread.currentThread().getStackTrace()[1].getClassName());
-    fDevuelveNombreMetodoEjecutandose(sClassName, sMethodName);
+     String sMethodName = new String (Thread.currentThread().getStackTrace()[1].getMethodName());
+    ut.fDevuelveNombreMetodoEjecutandose(sClassName, sMethodName);
 
 
     final int tarifaHora = 20;
@@ -40,10 +38,10 @@ class CalcularPaga
 
   public static void getCalcularPaga2(final int phorasTrabajadas, final int ptarifaHora, final int pporcentajeImpuestos )
   {
-
-    String sMethodName = new String (Thread.currentThread().getStackTrace()[1].getMethodName());
-    String sClassName  = new String (Thread.currentThread().getStackTrace()[1].getClassName());
-    fDevuelveNombreMetodoEjecutandose(sClassName, sMethodName);
+    // Mensajes ut = new Mensajes();
+String sClassName  = new String (Thread.currentThread().getStackTrace()[1].getClassName());
+     String sMethodName = new String (Thread.currentThread().getStackTrace()[1].getMethodName());
+    ut.fDevuelveNombreMetodoEjecutandose(sClassName, sMethodName);
 
     int paga = 0;
 
@@ -94,10 +92,10 @@ public static void fMensajePagaNeta(final int pPagaNeta){
 }
 
 public static int fIntroducirHorasTrabajadas(){
-     String sMethodName = new String (Thread.currentThread().getStackTrace()[1].getMethodName());
-    String sClassName  = new String (Thread.currentThread().getStackTrace()[1].getClassName());
-    fDevuelveNombreMetodoEjecutandose(sClassName, sMethodName);
-
+   //Mensajes ut = new Mensajes();
+   String sClassName  = new String (Thread.currentThread().getStackTrace()[1].getClassName());
+    String sMethodName = new String (Thread.currentThread().getStackTrace()[1].getMethodName());
+    ut.fDevuelveNombreMetodoEjecutandose(sClassName, sMethodName);
 
     System.out.println("Introduzca horas trabajadas: ");
     Scanner dato = new Scanner(System.in);
