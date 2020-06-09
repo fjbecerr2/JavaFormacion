@@ -1,0 +1,12 @@
+interfaceCalcular - desarrollar
+void solicitarTarifaHora(){};
+  void solicitarImpuestosPorcentaje(){};
+  void solicitarHorasTrabajadas(){};
+  void solicitarPagaBruta(){};
+
+  Separar el interface de las operaciones ¿?
+
+  getCalcularPaga2 -> Ajustar al interface
+  fIntroducirHorasTrabajadas -> Ajustar al interface
+
+  Ajustar las funciones para que funcione el TDD

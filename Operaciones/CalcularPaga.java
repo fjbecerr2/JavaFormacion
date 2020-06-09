@@ -4,38 +4,85 @@ import Util.*;
 class CalcularPaga
 {
  
-   static Mensajes ut = new Mensajes();
+  //static Mensajes ut = new Mensajes();
   
+  int tarifaHora = 20;
+  int impuestosPorcentaje = 20;
+  int horasTrabajadas = 30;
+  int pagaBruta = 0;
+  int impuestos = 0;
+  int pagaNeta = 0;
+  
+
+  public void setTarifaHora(int ptarifaHora){
+    this.tarifaHora = ptarifaHora;
+  };
+
+  public void setImpuestosPorcentaje(int pimpuestosPorcentaje){
+    this.impuestosPorcentaje = pimpuestosPorcentaje;
+  };
+
+  public void setImpuestos(int pimpuestos){
+    this.impuestos = pimpuestos;
+  };
+
+  public void setPagaBruta(int ppagaBruta){
+    this.pagaBruta = ppagaBruta;
+  }
+
+  public void setPagaNeta(int ppagaNeta){
+    this.pagaNeta = ppagaNeta;
+  }
+
+  void setHorasTrabajadas(int phorasTrabajadas){
+    this.horasTrabajadas = phorasTrabajadas;
+  }
+
+  public int getTarifaHora(){
+    return this.tarifaHora;
+  };
+
+  public int getImpuestosPorcentaje(){
+    return this.impuestosPorcentaje ;
+  };
+
+  public int getImpuestos(){
+    return this.impuestos;
+  };
+
+  public int getPagaBruta(){
+    return this.pagaBruta;
+  }
+
+  public int getPagaNeta(){
+    return this.pagaNeta;
+  }
+
+  public int getHorasTrabajadas(){
+    return this.horasTrabajadas;
+  }
+
 
   //MENSAJES
   static final int VERMENSAJES=0;
 
-  public static int getCalcularPaga(final int phorasTrabajadas)
+  public void getCalcularPaga(final int phorasTrabajadas)
   {
     
-    String sClassName  = new String (Thread.currentThread().getStackTrace()[1].getClassName());
+    /*String sClassName  = new String (Thread.currentThread().getStackTrace()[1].getClassName());
      String sMethodName = new String (Thread.currentThread().getStackTrace()[1].getMethodName());
-    ut.fDevuelveNombreMetodoEjecutandose(sClassName, sMethodName);
-
-
-    final int tarifaHora = 20;
-    final int impuestosPorcentaje = 20;
-    int paga = 0;
-
-    fMensajeHorasTrabajadas(phorasTrabajadas);
-    fMensajeTarifaHoras(tarifaHora);
-    fMensajeImpuestos(impuestosPorcentaje);
+    ut.fDevuelveNombreMetodoEjecutandose(sClassName, sMethodName);*/
     
-
-    paga = (phorasTrabajadas * tarifaHora);
-    fMensajePaga(paga);
-
-    paga = paga - (paga * 20) / 100;
-    fMensajePagaNeta(paga);
-    return paga;
+    setHorasTrabajadas(phorasTrabajadas);
+    setPagaBruta(getHorasTrabajadas()*getTarifaHora());
+    setImpuestos((getPagaBruta()*getImpuestosPorcentaje())/100);
+    setPagaNeta(getPagaBruta() - getImpuestos());
 
   }
 
+  
+
+/*
   public static void getCalcularPaga2(final int phorasTrabajadas, final int ptarifaHora, final int pporcentajeImpuestos )
   {
     // Mensajes ut = new Mensajes();
@@ -56,41 +103,11 @@ String sClassName  = new String (Thread.currentThread().getStackTrace()[1].getCl
     paga = paga - (paga * 20) / 100;
     fMensajePagaNeta(paga);
 
-  }
+  }*/
 
 
   
-
-  public static void fMensajeHorasTrabajadas(final int phorasTrabajadas){
-  if (VERMENSAJES==0){
-    System.out.println("Horas trabajadas: " + phorasTrabajadas);
-  }
-}
-
-public static void fMensajeTarifaHoras(final int ptarifaHoras){
-  if (VERMENSAJES==0){
-    System.out.println("Tarifa Hora "+ ptarifaHoras);
-  }
-}
-
-public static void fMensajeImpuestos(final int pporcentajeImpuestos){
-  if (VERMENSAJES==0){
-   System.out.println("Impuestos %: "+ pporcentajeImpuestos);
-  }
-}
-
-public static void fMensajePaga(final int pPaga){
-  if (VERMENSAJES==0){
-     System.out.println("Paga antes impuestos: "+ pPaga);
-  }
-}
-
-public static void fMensajePagaNeta(final int pPagaNeta){
-  if (VERMENSAJES==0){
-     System.out.println("Paga neta: "+ pPagaNeta);
-  }
-}
-
+/*
 public static int fIntroducirHorasTrabajadas(){
    //Mensajes ut = new Mensajes();
    String sClassName  = new String (Thread.currentThread().getStackTrace()[1].getClassName());
@@ -105,6 +122,7 @@ public static int fIntroducirHorasTrabajadas(){
     return iHorasTrabajadas;
 
   }
+  */
 
 }
 
