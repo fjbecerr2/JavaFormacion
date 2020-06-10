@@ -12,8 +12,7 @@ public class Main {
 
     System.out.println("EJERCICIOS DE JAVA");
     System.out.println("------------------");
-    //cp.getCalcularPaga(100); //[OK]
-
+    
     interfaceUsuario itfus = new interfaceUsuario();
     itfus.solicitarNombreUsuario();
     itfus.solicitarApellido1Usuario();
@@ -23,7 +22,12 @@ public class Main {
 
     interfaceCalcularPaga itfcp = new interfaceCalcularPaga();
 
-    itfcp.Calcular(100);
+    // itfcp.Calcular(100); [OK]
+    itfcp.solicitarTarifaHora();
+    itfcp.solicitarImpuestosPorcentaje();
+    itfcp.solicitarHorasTrabajadas();
+    itfcp.Calcular();
+
     itfcp.mostrarHorasTrabajadas();
     itfcp.mostrarTarifaHora();
     itfcp.mostrarPagaBruta();
@@ -39,8 +43,8 @@ public class Main {
     Ejercicio1.fEjercicio1_CalcularPaga(Ejercicio1.fIntroducirHorasTrabajadas());*/
     
     //TEST JUNIT
-    //TestRunner tr = new TestRunner(); //[OK]
-    //tr.main();
+    TestRunner tr = new TestRunner(); //[OK]
+    tr.main();
    
     /*for (int i=0; i<10; i++){
       System.out.print("Código: ");

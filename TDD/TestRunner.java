@@ -13,6 +13,7 @@ public class TestRunner
     configJunit cfg = new configJunit();
 
     int numeroTest = 0;
+   // int numeroTestError = 0;
 
     System.out.println(cfg.getTestIni());
     
@@ -25,7 +26,7 @@ public class TestRunner
     System.out.println(cfg.getTestFin());
 
     System.out.println(cfg.getTestLanzados(TestJunit.contador));
-    System.out.println(cfg.getTestFallados());
+    System.out.println(cfg.getTestFallados(numeroTest));
     System.out.println(result.wasSuccessful());
   }
 }

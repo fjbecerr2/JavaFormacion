@@ -12,7 +12,6 @@ class CalcularPaga
   int pagaBruta = 0;
   int impuestos = 0;
   int pagaNeta = 0;
-  
 
   public void setTarifaHora(int ptarifaHora){
     this.tarifaHora = ptarifaHora;
@@ -80,58 +79,10 @@ class CalcularPaga
 
   }
 
-  
-
-/*
-  public static void getCalcularPaga2(final int phorasTrabajadas, final int ptarifaHora, final int pporcentajeImpuestos )
-  {
-    // Mensajes ut = new Mensajes();
-String sClassName  = new String (Thread.currentThread().getStackTrace()[1].getClassName());
-     String sMethodName = new String (Thread.currentThread().getStackTrace()[1].getMethodName());
-    ut.fDevuelveNombreMetodoEjecutandose(sClassName, sMethodName);
-
-    int paga = 0;
-
-    fMensajeHorasTrabajadas(phorasTrabajadas);
-    fMensajeTarifaHoras(ptarifaHora);
-    fMensajeImpuestos(pporcentajeImpuestos);
-    
-
-    paga = (phorasTrabajadas * ptarifaHora);
-    fMensajePaga(paga);
-
-    paga = paga - (paga * 20) / 100;
-    fMensajePagaNeta(paga);
-
-  }*/
-
-
-  
-/*
-public static int fIntroducirHorasTrabajadas(){
-   //Mensajes ut = new Mensajes();
-   String sClassName  = new String (Thread.currentThread().getStackTrace()[1].getClassName());
-    String sMethodName = new String (Thread.currentThread().getStackTrace()[1].getMethodName());
-    ut.fDevuelveNombreMetodoEjecutandose(sClassName, sMethodName);
-
-    System.out.println("Introduzca horas trabajadas: ");
-    Scanner dato = new Scanner(System.in);
-    int iHorasTrabajadas = 0;
-    iHorasTrabajadas = dato.nextInt();
-
-    return iHorasTrabajadas;
-
+  public void getCalcularPaga(){
+    setPagaBruta(getHorasTrabajadas()*getTarifaHora());
+    setImpuestos((getPagaBruta()*getImpuestosPorcentaje())/100);
+    setPagaNeta(getPagaBruta() - getImpuestos());
   }
-  */
 
 }
-
-  
-/*
-
-
-
-
-
-*/
-
