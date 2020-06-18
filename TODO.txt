@@ -1,4 +1,15 @@
-interfaceCalcular - desarrollar
+[] Excepciones en Datos Libros
+[] Constructores de Libros
+[] Lista de funciones para evitar switch
+[] Test Libros
+[] Contenedor de Libros
+[] Contenedor de Generos
+[] Contenedor de Formato
+[TEST] Conversor de boolean salida pantalla
+[TEST] Conversor de boolean entrada
 
 
-  Separar el interface de las operaciones ¿?
+[OK] Método para escribir los datos Libros
+[OK] Método para mostrar datos Libros
+
+

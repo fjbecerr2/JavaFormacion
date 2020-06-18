@@ -27,6 +27,8 @@ private float precioLibro;
 private boolean enStockLibro;
 private short numEjemplaresDisponibles; 
 
+
+
 void setCodigoLibro(final int pcodigoLibro){
   this.codigoLibro = pcodigoLibro;
 }
@@ -99,6 +101,21 @@ void setEnStockLibro(final boolean penStockLibro){
 boolean getEnStockLibro(){
    return this.enStockLibro;
 } 
+
+void setEnStockLibroConversor(final char penStockLibro){
+  this.enStockLibro = false;
+  if (Character.toUpperCase(penStockLibro) == 'S'){
+    this.enStockLibro = true;
+  };
+}
+
+char getEnStockLibroConversor(){
+  char enStockLibroConversor = 'N';
+  if (this.enStockLibro == true){
+      enStockLibroConversor = 'S';
+  }
+  return enStockLibroConversor;
+}
 
 
 void setNumEjemplaresDisponibles(final short pnumEjemplaresDisponibles){

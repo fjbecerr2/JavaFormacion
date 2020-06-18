@@ -1,0 +1,3 @@
+https://www.w3schools.com/java/default.asp
+
+https://www.adictosaltrabajo.com/2015/09/17/la-directiva-static-en-java/
