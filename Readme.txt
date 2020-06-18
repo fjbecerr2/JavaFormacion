@@ -17,3 +17,9 @@ public static final String ANSI_CYAN = "\u001B[36m";
 public static final String ANSI_WHITE = "\u001B[37m";
 
 public static final String ANSI_RESET = "\u001B[0m";
+
+// TUTORIALES
+https://www.w3schools.com/java/
+https://developer.ibm.com/es/tutorials/j-introtojava1/
+https://www.coursera.org/learn/introduccion-java?ranMID=40328&ranEAID=KfP13hCzHzY&ranSiteID=KfP13hCzHzY-V_6EVMpmLlmiHfAz1bBsFA&siteID=KfP13hCzHzY-V_6EVMpmLlmiHfAz1bBsFA&utm_content=2&utm_medium=partners&utm_source=linkshare&utm_campaign=KfP13hCzHzY
+

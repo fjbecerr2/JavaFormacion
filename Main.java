@@ -2,12 +2,15 @@ import Util.*;
 import TDD.*;
 import Operaciones.*;
 
+import src.java.*;
+
 public class Main {
   public static void main(String[] args) 
   {
     //TUsuarios TU = new TUsuarios();
     //GeneradorCodigosUsuario gu = new //GeneradorCodigosUsuario ();
 
+    /* [OK]
     CalcularPaga cp = new CalcularPaga();
 
     System.out.println("EJERCICIOS DE JAVA");
@@ -32,7 +35,7 @@ public class Main {
     itfcp.mostrarTarifaHora();
     itfcp.mostrarPagaBruta();
     itfcp.mostrarPorcentajeImpuestos();
-    itfcp.mostrarPagaNeta();
+    itfcp.mostrarPagaNeta();*/
     
 
     /*Usuarios us = new Usuarios();
@@ -43,8 +46,8 @@ public class Main {
     Ejercicio1.fEjercicio1_CalcularPaga(Ejercicio1.fIntroducirHorasTrabajadas());*/
     
     //TEST JUNIT
-    TestRunner tr = new TestRunner(); //[OK]
-    tr.main();
+    //TestRunner tr = new TestRunner(); //[OK]
+    //tr.main();
    
     /*for (int i=0; i<10; i++){
       System.out.print("Código: ");
@@ -58,6 +61,13 @@ public class Main {
       System.out.println(codigo);
 
     }*/
+
+  //INTERFACE PARA LOS LIBROS
+  intfLibros objintfLibros = new intfLibros();
+
+  objintfLibros.IntroducirDatosLibro();
+  objintfLibros.MostrarDatosLibro();
+
   }
 }
 
