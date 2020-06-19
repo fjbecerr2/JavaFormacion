@@ -16,7 +16,7 @@ public class intfLibros{
     "Número de Paginas",
     "Formato",
     "Precio",
-    "En stock",
+    "En stock [S/N]",
     "Número de ejemplares"
   };
 
@@ -30,6 +30,7 @@ public class intfLibros{
     int iDato = 0;
     float fDato = 0;
     boolean bDato = true;
+    char cDato = 'S';
   
     Scanner dato = new Scanner(System.in);
 
@@ -70,8 +71,10 @@ public class intfLibros{
           objLibros.setPrecioLibro(fDato);
         break;
         case 8: 
-          bDato =Boolean.parseBoolean(stDato);
-          objLibros.setEnStockLibro(bDato);
+          //bDato =Boolean.parseBoolean(stDato);
+          // objLibros.setEnStockLibro(bDato);
+          cDato =stDato.charAt(0); //Primer caracter
+          objLibros.setEnStockLibroConversor(cDato);
         break;
         case 9: 
           shDato = Short.valueOf(stDato);
@@ -110,7 +113,8 @@ public class intfLibros{
         break;
         case 7: valorCampo =Float.toString(objLibros.getPrecioLibro());
         break;
-        case 8: valorCampo =Boolean.toString(objLibros.getEnStockLibro());
+        case 8: valorCampo =Character.toString(objLibros.getEnStockLibroConversor());
+        //valorCampo =Boolean.toString(objLibros.getEnStockLibro());
         break;
         case 9: valorCampo =Integer.toString(objLibros.getNumEjemplaresDisponibles());
         break;

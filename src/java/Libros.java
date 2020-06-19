@@ -27,7 +27,18 @@ private float precioLibro;
 private boolean enStockLibro;
 private short numEjemplaresDisponibles; 
 
-
+public Libros(){
+  codigoLibro =0;
+  nombreLibro ="NombreDesconocido";
+  autorLibro ="AutorDesconocido";
+  editorialLibro ="EditorialDesconocida";
+  generoLibro =0;
+  numPaginasLibro =0;
+  tipoFormatoLibro =0;
+  precioLibro =0;
+  enStockLibro =false;
+  numEjemplaresDisponibles =0; 
+}
 
 void setCodigoLibro(final int pcodigoLibro){
   this.codigoLibro = pcodigoLibro;

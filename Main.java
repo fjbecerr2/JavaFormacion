@@ -63,11 +63,13 @@ public class Main {
     }*/
 
   //INTERFACE PARA LOS LIBROS
-  intfLibros objintfLibros = new intfLibros();
+  //intfLibros objintfLibros = new intfLibros();
 
-  objintfLibros.IntroducirDatosLibro();
-  objintfLibros.MostrarDatosLibro();
+  //objintfLibros.IntroducirDatosLibro();
+  //objintfLibros.MostrarDatosLibro();
 
+  intfLibros objintfLibros2 = new intfLibros();
+  objintfLibros2.MostrarDatosLibro();
   }
 }
 

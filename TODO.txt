@@ -1,14 +1,13 @@
 [] Excepciones en Datos Libros
-[] Constructores de Libros
+[TEST] Constructores de Libros
 [] Lista de funciones para evitar switch
 [] Test Libros
 [] Contenedor de Libros
 [] Contenedor de Generos
 [] Contenedor de Formato
-[TEST] Conversor de boolean salida pantalla
-[TEST] Conversor de boolean entrada
 
-
+[OK] Conversor de boolean salida pantalla
+[OK] Conversor de boolean entrada
 [OK] Método para escribir los datos Libros
 [OK] Método para mostrar datos Libros
 
