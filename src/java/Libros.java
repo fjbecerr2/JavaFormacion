@@ -137,4 +137,21 @@ short getNumEjemplaresDisponibles(){
    return this.numEjemplaresDisponibles;
 }
 
+public String toString (){
+        String libro =Integer.toString(this.codigoLibro);
+        libro +=" "+this.nombreLibro;
+        libro +=" "+this.autorLibro;
+        libro +=" "+this.editorialLibro;
+        libro +=" "+this.generoLibro;
+        libro +=" "+this.numPaginasLibro;
+        libro +=" "+this.tipoFormatoLibro;
+        libro +=" "+this.precioLibro;
+        libro +=" "+this.enStockLibro;
+        libro +=" "+this.numEjemplaresDisponibles;
+        
+        return libro;
+    }
+
 }
+
+ 

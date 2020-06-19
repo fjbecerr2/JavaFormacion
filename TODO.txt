@@ -5,7 +5,14 @@
 [] Contenedor de Libros
 [] Contenedor de Generos
 [] Contenedor de Formato
+[] Crear los paquetes
 
+[OK] Clase Direccion
+[OK] Clase cliente
+[OK] Constructor por defecto cliente
+[OK] Constructor por defecto Direccion
+
+[OK] Clase abstracta Persona
 [OK] Conversor de boolean salida pantalla
 [OK] Conversor de boolean entrada
 [OK] Método para escribir los datos Libros

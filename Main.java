@@ -70,6 +70,19 @@ public class Main {
 
   intfLibros objintfLibros2 = new intfLibros();
   objintfLibros2.MostrarDatosLibro();
+
+  Libros obLibro =new Libros();
+  System.out.println(obLibro.toString());
+
+  Cliente objCliente = new Cliente();
+  System.out.println(objCliente.toString());
+
+  Direccion objDireccion =new Direccion();
+  System.out.println(objDireccion.toString());
+
+
+
+
   }
 }
 
