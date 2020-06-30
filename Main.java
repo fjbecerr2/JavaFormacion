@@ -77,12 +77,23 @@ public class Main {
 
   Cliente objCliente = new Cliente();
   System.out.println(objCliente.toString());
+   Cliente objCliente2 = new Cliente(10);
+  System.out.println(objCliente2.toString());
 
   Direccion objDireccion =new Direccion();
   System.out.println(objDireccion.toString());
+  
+  Direccion objDireccion2 =new Direccion(10);
+  System.out.println(objDireccion2.toString());
+  
 
   GeneradorCodigos objGenerador = new GeneradorCodigos();
   System.out.println(objGenerador.DevolverCodigo());
+
+  GeneradorCadenas objGeneradorCadenas = new GeneradorCadenas();
+
+  System.out.println(objGeneradorCadenas.GenerarStringAleatoria(10));
+System.out.println(objGeneradorCadenas.GenerarStringAleatoria(10));
 
 
 

@@ -10,6 +10,17 @@ class Cliente extends Persona {
     this.dni ="SIN DNI";
   }
 
+  public Cliente(int longCadena){
+    GeneradorCadenas objGeneradorCadenas = new GeneradorCadenas();
+    GeneradorCodigos objGenerador = new GeneradorCodigos();
+    
+    this.nombre =objGeneradorCadenas.GenerarStringAleatoria(longCadena);
+    this.apellido1 =objGeneradorCadenas.GenerarStringAleatoria(longCadena);
+    this.apellido2 =objGeneradorCadenas.GenerarStringAleatoria(longCadena);
+    this.telefono =objGeneradorCadenas.GenerarStringAleatoria(longCadena);
+    this.dni =objGeneradorCadenas.GenerarStringAleatoria(longCadena);
+  };
+
   public void setNombre(final String pnombre){
     this.nombre =pnombre;
   };

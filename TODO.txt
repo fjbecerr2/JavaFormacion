@@ -3,7 +3,7 @@ https://ingenieriadesoftware.es/editor-codigo-online-programa-ide-navegador/
 
 [] Excepciones en Datos Libros
 [TEST] Constructores de Libros
-[] Generador de Direccion
+
 [] Añadir DNI a persona y herencias
 [] Lista de funciones para evitar switch
 [] Test Libros
@@ -13,6 +13,7 @@ https://ingenieriadesoftware.es/editor-codigo-online-programa-ide-navegador/
 [] Crear los paquetes
 
 [OK] Generador de códigos 
+[OK] Generador de Cadenas
 
 [OK] Clase Direccion
 [OK] Clase cliente

@@ -14,6 +14,17 @@ public class Direccion{
     this.codigoPostal ="-";
   }
 
+  public Direccion(int longCadena){
+    GeneradorCadenas objGeneradorCadenas = new GeneradorCadenas();
+    GeneradorCodigos objGenerador = new GeneradorCodigos();
+
+    this.calle =objGeneradorCadenas.GenerarStringAleatoria(longCadena);
+    this.numero =objGenerador.DevolverCodigo();
+    this.piso =objGenerador.DevolverCodigo();
+    this.puerta ='-';
+    this.codigoPostal ="-";
+  }
+
   public void setCalle(final String pcalle)
   {
     this.calle =pcalle;
