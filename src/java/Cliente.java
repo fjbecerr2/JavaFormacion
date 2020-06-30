@@ -2,7 +2,7 @@ class Cliente extends Persona {
   
   private String dni;
 
-  public void Cliente(){
+  public Cliente(){
     this.nombre ="SIN NOMBRE";
     this.apellido1 ="SIN APELLIDO1";
     this.apellido2 ="SIN APELLIDO2";

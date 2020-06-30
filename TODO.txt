@@ -1,11 +1,18 @@
+https://www.w3schools.com/java/java_encapsulation.asp
+https://ingenieriadesoftware.es/editor-codigo-online-programa-ide-navegador/
+
 [] Excepciones en Datos Libros
 [TEST] Constructores de Libros
+[] Generador de Direccion
+[] Añadir DNI a persona y herencias
 [] Lista de funciones para evitar switch
 [] Test Libros
 [] Contenedor de Libros
 [] Contenedor de Generos
 [] Contenedor de Formato
 [] Crear los paquetes
+
+[OK] Generador de códigos 
 
 [OK] Clase Direccion
 [OK] Clase cliente

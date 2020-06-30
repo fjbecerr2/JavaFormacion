@@ -6,7 +6,7 @@ public class Direccion{
   private char puerta;
   private String codigoPostal;
 
-  public void Direccion(){
+  public Direccion(){
     this.calle ="SIN CALLE";
     this.numero =0;
     this.piso =0;

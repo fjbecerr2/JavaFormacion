@@ -2,6 +2,7 @@ import Util.*;
 import TDD.*;
 import Operaciones.*;
 
+
 import src.java.*;
 
 public class Main {
@@ -79,6 +80,9 @@ public class Main {
 
   Direccion objDireccion =new Direccion();
   System.out.println(objDireccion.toString());
+
+  GeneradorCodigos objGenerador = new GeneradorCodigos();
+  System.out.println(objGenerador.DevolverCodigo());
 
 
 

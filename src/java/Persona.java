@@ -1,3 +1,4 @@
+//CLASE ABSTRACTA PARA CLIENTES, OPERADORES, ETC
 abstract class Persona{
 
   protected String nombre;
