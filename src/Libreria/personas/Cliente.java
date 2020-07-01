@@ -1,24 +1,31 @@
+package personas;
+
+import generadores.*;
+
 class Cliente extends Persona {
   
-  private String dni;
-
   public Cliente(){
-    this.nombre ="SIN NOMBRE";
+    System.out.println("cREANDO EL CLIENTE");
+    this.nombre ="SIN NOMBREX";
     this.apellido1 ="SIN APELLIDO1";
     this.apellido2 ="SIN APELLIDO2";
     this.telefono ="SIN TELEFONO";
-    this.dni ="SIN DNI";
+    this.dni ="SIN XXX";
   }
 
   public Cliente(int longCadena){
+    
+    System.out.println("cREANDO EL GENERADOR");
     GeneradorCadenas objGeneradorCadenas = new GeneradorCadenas();
     GeneradorCodigos objGenerador = new GeneradorCodigos();
     
+    GeneradorDNI objGeneradorDNI = new GeneradorDNI();
+        
     this.nombre =objGeneradorCadenas.GenerarStringAleatoria(longCadena);
     this.apellido1 =objGeneradorCadenas.GenerarStringAleatoria(longCadena);
     this.apellido2 =objGeneradorCadenas.GenerarStringAleatoria(longCadena);
     this.telefono =objGeneradorCadenas.GenerarStringAleatoria(longCadena);
-    this.dni =objGeneradorCadenas.GenerarStringAleatoria(longCadena);
+    this.dni =objGeneradorDNI.GenerarDNI();
   };
 
   public void setNombre(final String pnombre){
@@ -37,7 +44,7 @@ class Cliente extends Persona {
     this.telefono =ptelefono;
   }
 
-  public void setDni(final String pdni){
+  public void setDNI(final String pdni){
     this.dni =pdni;
   }
 
@@ -57,17 +64,21 @@ class Cliente extends Persona {
     return this.telefono;
   }
 
-  public String getDni(){
+  public String getDNI(){
     return this.dni;
   }
 
   public String toString (){
         String cliente =this.nombre;
-        cliente +=" "+this.apellido1;
+        //cliente +=" "+this.apellido1;
         cliente +=" "+this.apellido2;
         cliente +=" "+this.telefono;
         cliente +=" "+this.dni;
         
         return cliente;
-    }
+  }
+
+  /*public void sss(){
+    return x;
+  }*/
 }

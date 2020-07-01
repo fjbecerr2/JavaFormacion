@@ -3,15 +3,16 @@ https://ingenieriadesoftware.es/editor-codigo-online-programa-ide-navegador/
 
 [] Excepciones en Datos Libros
 [TEST] Constructores de Libros
-
-[] Añadir DNI a persona y herencias
 [] Lista de funciones para evitar switch
 [] Test Libros
 [] Contenedor de Libros
 [] Contenedor de Generos
 [] Contenedor de Formato
-[] Crear los paquetes
+[] Genedor DNI
 
+
+[OK] Crear los paquetes
+[OK] Añadir DNI a persona y herencias
 [OK] Generador de códigos 
 [OK] Generador de Cadenas
 

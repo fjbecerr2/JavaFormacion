@@ -2,7 +2,7 @@
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
-import Operaciones.*; 
+//import Operaciones.*; 
 //import configJunit.*;
 
 public class TestJunit

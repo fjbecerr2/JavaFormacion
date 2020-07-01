@@ -1,3 +1,4 @@
+package generadores;
 import java.util.Random;
 
 
@@ -16,7 +17,6 @@ public class GeneradorCodigos{
     GenerarCodigo();
     return codigo;
   }
-
 
 
 }

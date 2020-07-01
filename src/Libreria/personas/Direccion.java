@@ -1,3 +1,7 @@
+package personas;
+
+import generadores.*;
+
 public class Direccion{
 
   private String calle;

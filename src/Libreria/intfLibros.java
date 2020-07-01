@@ -1,6 +1,10 @@
+//package interfaceLibreria;
+
 import java.util.Scanner; 
 
-import src.java.*;
+//import Libros.*;
+import src.Libreria.*;
+//import src.java.Libros;
 
 
 public class intfLibros{
@@ -71,8 +75,6 @@ public class intfLibros{
           objLibros.setPrecioLibro(fDato);
         break;
         case 8: 
-          //bDato =Boolean.parseBoolean(stDato);
-          // objLibros.setEnStockLibro(bDato);
           cDato =stDato.charAt(0); //Primer caracter
           objLibros.setEnStockLibroConversor(cDato);
         break;
@@ -114,7 +116,6 @@ public class intfLibros{
         case 7: valorCampo =Float.toString(objLibros.getPrecioLibro());
         break;
         case 8: valorCampo =Character.toString(objLibros.getEnStockLibroConversor());
-        //valorCampo =Boolean.toString(objLibros.getEnStockLibro());
         break;
         case 9: valorCampo =Integer.toString(objLibros.getNumEjemplaresDisponibles());
         break;

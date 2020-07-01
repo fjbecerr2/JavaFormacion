@@ -1,99 +1,42 @@
 import Util.*;
 import TDD.*;
-import Operaciones.*;
 
-
-import src.java.*;
+import src.Libreria.*;
 
 public class Main {
   public static void main(String[] args) 
   {
-    //TUsuarios TU = new TUsuarios();
-    //GeneradorCodigosUsuario gu = new //GeneradorCodigosUsuario ();
+    //Generar un Cliente [OK]
+    Cliente objCliente = new Cliente();
+    System.out.println(objCliente.toString());
 
-    /* [OK]
-    CalcularPaga cp = new CalcularPaga();
+    Cliente objCliente2 = new Cliente(5);
+    System.out.println(objCliente2.toString());
 
-    System.out.println("EJERCICIOS DE JAVA");
-    System.out.println("------------------");
-    
-    interfaceUsuario itfus = new interfaceUsuario();
-    itfus.solicitarNombreUsuario();
-    itfus.solicitarApellido1Usuario();
-    itfus.solicitarApellido2Usuario();
-    
-    itfus.mostrarUsuario();
+    //Generar una Direccion [OK]
+    //Direccion objDireccion =new Direccion();
+    //System.out.println(objDireccion.toString());
 
-    interfaceCalcularPaga itfcp = new interfaceCalcularPaga();
+    //Direccion objDireccion =new Direccion(10);
+    //System.out.println(objDireccion.toString());
 
-    // itfcp.Calcular(100); [OK]
-    itfcp.solicitarTarifaHora();
-    itfcp.solicitarImpuestosPorcentaje();
-    itfcp.solicitarHorasTrabajadas();
-    itfcp.Calcular();
+    //Generar un Libro[OK]
+    //Libros objLibro =new Libros();
+    //System.out.println(objLibro.toString());
 
-    itfcp.mostrarHorasTrabajadas();
-    itfcp.mostrarTarifaHora();
-    itfcp.mostrarPagaBruta();
-    itfcp.mostrarPorcentajeImpuestos();
-    itfcp.mostrarPagaNeta();*/
-    
+    //Generar un Código[OK]
+    //GeneradorCodigos objCodigo =new GeneradorCodigos();
+    //System.out.println(objCodigo.DevolverCodigo());
 
-    /*Usuarios us = new Usuarios();
-    us.setUsuario();
-    us.getVerUsuario();*/
-    //.CalcularPaga.getCalcularPaga(100);
-    /*Ejercicio1.fEjercicio1_CalcularPaga2(100,20,20);
-    Ejercicio1.fEjercicio1_CalcularPaga(Ejercicio1.fIntroducirHorasTrabajadas());*/
-    
-    //TEST JUNIT
-    //TestRunner tr = new TestRunner(); //[OK]
-    //tr.main();
-   
-    /*for (int i=0; i<10; i++){
-      System.out.print("Código: ");
-      int codigo = gu.getGenerarCodigo();
-      System.out.println(codigo);
-    }*/
+    //Generar una cadena [OK]
+    //GeneradorCadenas objCadena =new GeneradorCadenas();
+    //System.out.println(objCadena.GenerarStringAleatoria(8));
 
-    /*for(int i=0:10){
-       System.out.print("Código: ");
-      int codigo = gu.setGenerarCodigo();
-      System.out.println(codigo);
-
-    }*/
-
-  //INTERFACE PARA LOS LIBROS
-  //intfLibros objintfLibros = new intfLibros();
-
-  //objintfLibros.IntroducirDatosLibro();
-  //objintfLibros.MostrarDatosLibro();
-
-  intfLibros objintfLibros2 = new intfLibros();
-  objintfLibros2.MostrarDatosLibro();
-
-  Libros obLibro =new Libros();
-  System.out.println(obLibro.toString());
-
-  Cliente objCliente = new Cliente();
-  System.out.println(objCliente.toString());
-   Cliente objCliente2 = new Cliente(10);
-  System.out.println(objCliente2.toString());
-
-  Direccion objDireccion =new Direccion();
-  System.out.println(objDireccion.toString());
-  
-  Direccion objDireccion2 =new Direccion(10);
-  System.out.println(objDireccion2.toString());
-  
-
-  GeneradorCodigos objGenerador = new GeneradorCodigos();
-  System.out.println(objGenerador.DevolverCodigo());
-
-  GeneradorCadenas objGeneradorCadenas = new GeneradorCadenas();
-
-  System.out.println(objGeneradorCadenas.GenerarStringAleatoria(10));
-System.out.println(objGeneradorCadenas.GenerarStringAleatoria(10));
+    //Generar DNI [OK]
+    /*GeneradorDNI objDNI =new GeneradorDNI();
+    System.out.println(objDNI.GenerarNumeroDNI());
+    System.out.println(objDNI.GenerarLetraDNI());
+    System.out.println(objDNI.GenerarDNI());*/
 
 
 
