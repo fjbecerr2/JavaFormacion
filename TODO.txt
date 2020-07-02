@@ -1,26 +1,28 @@
 https://www.w3schools.com/java/java_encapsulation.asp
 https://ingenieriadesoftware.es/editor-codigo-online-programa-ide-navegador/
 
-[] Excepciones en Datos Libros
-[TEST] Constructores de Libros
 [] Lista de funciones para evitar switch
 [] Test Libros
 [] Contenedor de Libros
-[] Contenedor de Generos
+[] Completar funcionamiento de clases internas Libro
 [] Contenedor de Formato
-[] Genedor DNI
+[] Excepciones de entrada
+[] Construir Menu consola
+[] Construir Interface windows
+[] Upper para todas las cadenas de entrada
 
-
+[OK] Constructores de Libros
+[OK] Usar el generador de codigo para codigoLibro
+[OK] Clase interna de Generos
+[OK] Genedor DNI
 [OK] Crear los paquetes
 [OK] Añadir DNI a persona y herencias
 [OK] Generador de códigos 
 [OK] Generador de Cadenas
-
 [OK] Clase Direccion
 [OK] Clase cliente
 [OK] Constructor por defecto cliente
 [OK] Constructor por defecto Direccion
-
 [OK] Clase abstracta Persona
 [OK] Conversor de boolean salida pantalla
 [OK] Conversor de boolean entrada

@@ -24,7 +24,9 @@ public class intfLibros{
     "Número de ejemplares"
   };
 
-  Libros objLibros = new Libros();
+  Libro objLibros = new Libro();
+  Libro.Genero objGenero = objLibros.new Genero();
+  Libro.Formato objFormato = objLibros.new Formato();
 
   String stDato = new String();
 
@@ -42,14 +44,17 @@ public class intfLibros{
     System.out.println("---------------");
     for(int i=0; i<CamposLibro.length; i++)
     {
-      System.out.print(MensajeIntroducir+CamposLibro[i]+": ");
-
-      stDato = dato.nextLine();
+      if(i>0){ //El codigo se genera solo
+        System.out.print(MensajeIntroducir+CamposLibro[i]+": ");
+        stDato = dato.nextLine();
+      }
 
       switch(i)
       {
         case 0: 
-          iDato = Integer.parseInt(stDato);
+          //iDato = Integer.parseInt(stDato);
+          GeneradorCodigos objGenerador = new GeneradorCodigos();
+          iDato = objGenerador.DevolverCodigo();
           objLibros.setCodigoLibro(iDato);
         break; 
         case 1: objLibros.setNombreLibro(stDato);
@@ -63,12 +68,12 @@ public class intfLibros{
           objLibros.setGeneroLibro(shDato);
         break;
         case 5: 
-        shDato = Short.valueOf(stDato);
-        objLibros.setNumPaginasLibro(shDato);
+         shDato = Short.valueOf(stDato);
+          objLibros.setNumPaginasLibro(shDato);
         break;
         case 6: 
-        iDato = Integer.parseInt(stDato);
-        objLibros.setTipoFormatoLibro(shDato);
+          shDato =  Short.valueOf(stDato);
+          objLibros.setTipoFormatoLibro(shDato);
         break;
         case 7: 
           fDato = Float.parseFloat(stDato);
@@ -107,11 +112,17 @@ public class intfLibros{
         break;
         case 3: valorCampo =objLibros.getEditorialLibro();
         break;
-        case 4: valorCampo = String.valueOf(objLibros.getGeneroLibro());
+        case 4: 
+        //Devuelve el genero en cadena por el indice
+          valorCampo =
+        objGenero.getgeneros(objLibros.getGeneroLibro());
+        //valorCampo = String.valueOf(objLibros.getGeneroLibro());
         break;
         case 5: valorCampo =String.valueOf(objLibros.getNumPaginasLibro());
         break;
-        case 6: valorCampo =String.valueOf(objLibros.getTipoFormatoLibro());
+        case 6: 
+        valorCampo = objFormato.getFormato(objLibros.getTipoFormatoLibro());
+        //valorCampo =String.valueOf(objLibros.getTipoFormatoLibro());
         break;
         case 7: valorCampo =Float.toString(objLibros.getPrecioLibro());
         break;

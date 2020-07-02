@@ -70,7 +70,7 @@ class Cliente extends Persona {
 
   public String toString (){
         String cliente =this.nombre;
-        //cliente +=" "+this.apellido1;
+        cliente +=" "+this.apellido1;
         cliente +=" "+this.apellido2;
         cliente +=" "+this.telefono;
         cliente +=" "+this.dni;
@@ -78,7 +78,4 @@ class Cliente extends Persona {
         return cliente;
   }
 
-  /*public void sss(){
-    return x;
-  }*/
 }

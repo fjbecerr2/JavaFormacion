@@ -7,11 +7,11 @@ public class Main {
   public static void main(String[] args) 
   {
     //Generar un Cliente [OK]
-    Cliente objCliente = new Cliente();
-    System.out.println(objCliente.toString());
+    //Cliente objCliente = new Cliente();
+    //System.out.println(objCliente.toString());
 
-    Cliente objCliente2 = new Cliente(5);
-    System.out.println(objCliente2.toString());
+    //Cliente objCliente2 = new Cliente(5);
+    //System.out.println(objCliente2.toString());
 
     //Generar una Direccion [OK]
     //Direccion objDireccion =new Direccion();
@@ -37,6 +37,11 @@ public class Main {
     System.out.println(objDNI.GenerarNumeroDNI());
     System.out.println(objDNI.GenerarLetraDNI());
     System.out.println(objDNI.GenerarDNI());*/
+
+    //Interface []
+    intfLibros objInterface =new intfLibros();
+    objInterface.IntroducirDatosLibro();
+    objInterface.MostrarDatosLibro();
 
 
 

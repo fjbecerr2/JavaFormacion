@@ -1,5 +1,5 @@
 
-public class Libros
+public class Libro
 {
  
   final String version = "0";
@@ -7,6 +7,32 @@ public class Libros
   final String fechaUpdate = "18062020";
   final char estado = 'D'; 
 
+  class Genero{ //Clase interna
+    private String[] tipo ={
+      "Novela", "Relato", "Poesia"
+    };
+    private String[] generos ={
+      "Histórica", "Romantica", "Terror"
+    };
+
+    public String getTipo(final short pTipo){
+      return tipo[pTipo];
+    }
+
+    public String getgeneros(final short pGenero){
+      return generos[pGenero];
+    }
+  }
+
+  class Formato{
+    private String[] formato ={
+      "Tapa Dura", "Tapa Blanda", "Bolsillo" 
+    };
+
+    public String getFormato(final short pFormato){
+      return formato[pFormato];
+    }
+  }
   /*
   D- Desarrollo
   T- Testando
@@ -29,7 +55,7 @@ public class Libros
   private boolean enStockLibro;
   private short numEjemplaresDisponibles; 
 
-  public Libros(){
+  public Libro(){
     codigoLibro =0;
     nombreLibro ="NombreDesconocido";
     autorLibro ="AutorDesconocido";
@@ -138,6 +164,8 @@ public class Libros
   short getNumEjemplaresDisponibles(){
     return this.numEjemplaresDisponibles;
   }
+
+
 
   public String toString (){
     String libro =Integer.toString(this.codigoLibro);
