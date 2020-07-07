@@ -26,7 +26,7 @@ public class intfLibros{
 
   Libro objLibros = new Libro();
   Libro.Genero objGenero = objLibros.new Genero();
-  Libro.Formato objFormato = objLibros.new Formato();
+  Libro.Formato objFormato = new Libro.Formato();
 
   String stDato = new String();
 

@@ -1,3 +1,5 @@
+import java.time.LocalDate; // import the LocalDate class
+
 import Util.*;
 import TDD.*;
 
@@ -6,6 +8,9 @@ import src.Libreria.*;
 public class Main {
   public static void main(String[] args) 
   {
+    System.out.println("Entrando");
+    LocalDate myObj = LocalDate.now(); // Create a date object
+    System.out.println(myObj); // Display the current date
     //Generar un Cliente [OK]
     //Cliente objCliente = new Cliente();
     //System.out.println(objCliente.toString());
@@ -38,12 +43,16 @@ public class Main {
     System.out.println(objDNI.GenerarLetraDNI());
     System.out.println(objDNI.GenerarDNI());*/
 
-    //Interface []
-    intfLibros objInterface =new intfLibros();
-    objInterface.IntroducirDatosLibro();
-    objInterface.MostrarDatosLibro();
+    //Interface [OK]
+    //intfLibros objInterface =new intfLibros();
+    //objInterface.IntroducirDatosLibro();
+    //objInterface.MostrarDatosLibro();
 
+    //Menu
+    MenuPrincipal objMenuPrincipal =new MenuPrincipal();
+    objMenuPrincipal.MostrarMenu();
 
+  System.out.println("HECHO");
 
 
   }

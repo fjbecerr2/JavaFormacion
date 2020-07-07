@@ -7,7 +7,7 @@ public class Libro
   final String fechaUpdate = "18062020";
   final char estado = 'D'; 
 
-  class Genero{ //Clase interna
+  class Genero{ //Inner class
     private String[] tipo ={
       "Novela", "Relato", "Poesia"
     };
@@ -24,7 +24,11 @@ public class Libro
     }
   }
 
-  class Formato{
+  //No necesita objeto de clase contenedora
+  static class Formato{ 
+    
+
+
     private String[] formato ={
       "Tapa Dura", "Tapa Blanda", "Bolsillo" 
     };

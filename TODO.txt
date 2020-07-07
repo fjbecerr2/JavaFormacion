@@ -1,5 +1,18 @@
 https://www.w3schools.com/java/java_encapsulation.asp
 https://ingenieriadesoftware.es/editor-codigo-online-programa-ide-navegador/
+https://profile.es/blog/herramientas-de-desarrollo-de-software/
+https://ingenieriadesoftware.es/editor-codigo-online-programa-ide-navegador/
+eclipse che
+https://sso.redhat.com/auth/realms/redhat-external/protocol/openid-connect/auth?access_type=online&client_id=osio&redirect_uri=https%3A%2F%2Fauth.openshift.io%2Fapi%2Fauthorize%2Fcallback&response_type=code&scope=openid+email+profile&state=d8001e33-f356-4284-8577-029de2f16cb5
+fjbecerr2
+fjbecerr2@gmail.com
+red...2
+
+https://portal.aws.amazon.com/billing/signup#/account
+fjbecerr2@gmail.com
+clo..._2
+
+https://codeanywhere.com/
 
 [] Lista de funciones para evitar switch
 [] Test Libros

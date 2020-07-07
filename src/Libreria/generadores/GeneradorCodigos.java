@@ -7,7 +7,7 @@ public class GeneradorCodigos{
   final static int GENERADOR = 10000;
   static int codigo = 0;
 
-  void GeneradorCodigos(){
+  public GeneradorCodigos(){
     GenerarCodigo();
   }
 
